@@ -1,49 +1,51 @@
-require "application_system_test_case"
+# frozen_string_literal: true
+
+require 'application_system_test_case'
 
 class VisitsTest < ApplicationSystemTestCase
   setup do
     @visit = visits(:one)
   end
 
-  test "visiting the index" do
+  test 'visiting the index' do
     visit visits_url
-    assert_selector "h1", text: "Visits"
+    assert_selector 'h1', text: 'Visits'
   end
 
-  test "creating a Visit" do
+  test 'creating a Visit' do
     visit visits_url
-    click_on "New Visit"
+    click_on 'New Visit'
 
-    fill_in "Customer", with: @visit.customer_id
-    fill_in "Date of visit", with: @visit.date_of_visit
-    fill_in "Household count", with: @visit.household_count
-    fill_in "Notes", with: @visit.notes
-    click_on "Create Visit"
+    fill_in 'Customer', with: @visit.customer_id
+    fill_in 'Date of visit', with: @visit.date_of_visit
+    fill_in 'Household count', with: @visit.household_count
+    fill_in 'Notes', with: @visit.notes
+    click_on 'Create Visit'
 
-    assert_text "Visit was successfully created"
-    click_on "Back"
+    assert_text 'Visit was successfully created'
+    click_on 'Back'
   end
 
-  test "updating a Visit" do
+  test 'updating a Visit' do
     visit visits_url
-    click_on "Edit", match: :first
+    click_on 'Edit', match: :first
 
-    fill_in "Customer", with: @visit.customer_id
-    fill_in "Date of visit", with: @visit.date_of_visit
-    fill_in "Household count", with: @visit.household_count
-    fill_in "Notes", with: @visit.notes
-    click_on "Update Visit"
+    fill_in 'Customer', with: @visit.customer_id
+    fill_in 'Date of visit', with: @visit.date_of_visit
+    fill_in 'Household count', with: @visit.household_count
+    fill_in 'Notes', with: @visit.notes
+    click_on 'Update Visit'
 
-    assert_text "Visit was successfully updated"
-    click_on "Back"
+    assert_text 'Visit was successfully updated'
+    click_on 'Back'
   end
 
-  test "destroying a Visit" do
+  test 'destroying a Visit' do
     visit visits_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on 'Destroy', match: :first
     end
 
-    assert_text "Visit was successfully destroyed"
+    assert_text 'Visit was successfully destroyed'
   end
 end

@@ -14,6 +14,9 @@ Assuming you have Ruby and Rails installed already
     gem install bundler
     bundle install
     bin/rake db:migrate
+    bin/rake db:seed
+
+The first two commands set up the computer and the application. The third command creates the database. And the fourth command inserts test data for local development.
 
 ## Run the application
 
@@ -21,6 +24,15 @@ Assuming you have Ruby and Rails installed already
 
 Browse to http://localhost:3000 to access the application
 
-## Testing
+## Automated Testing
 
     bin/rails test
+
+# User administration
+For security users are not allowed to create accounts for themselves. Instead an administrator must create users via the console.
+
+    bin/rails console
+will start the console
+
+    User.create(email: 'me@example.com', password: 'Passw0rd!', password_confirmation: 'Passw0rd!')
+will create the user
