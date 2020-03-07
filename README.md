@@ -1,24 +1,26 @@
-# README
+# Food Shelf
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Development
+## Prerequisites
+* Ruby 2.6.x
+* Rails 6.x
 
-Things you may want to cover:
+### Windows
+You may want to see https://gorails.com/setup/windows/10
 
-* Ruby version
+## Setup
+Assuming you have Ruby and Rails installed already
 
-* System dependencies
+    gem install bundler
+    bundle install
+    bin/rake db:migrate
 
-* Configuration
+## Run the application
 
-* Database creation
+    bin/rails server
 
-* Database initialization
+Browse to http://localhost:3000 to access the application
 
-* How to run the test suite
+## Testing
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    bin/rails test
