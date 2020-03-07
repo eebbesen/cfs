@@ -1,6 +1,8 @@
 require 'test_helper'
 
 class VisitsControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @visit = visits(:one)
   end
