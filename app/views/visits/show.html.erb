@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @visit.customer_id %>
+</p>
+
+<p>
+  <strong>Date of visit:</strong>
+  <%= @visit.date_of_visit %>
+</p>
+
+<p>
+  <strong>Household count:</strong>
+  <%= @visit.household_count %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @visit.notes %>
+</p>
+
+<%= link_to 'Edit', edit_visit_path(@visit) %> |
+<%= link_to 'Back', visits_path %>
