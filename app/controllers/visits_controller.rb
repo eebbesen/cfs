@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class VisitsController < ApplicationController
-  before_action :set_visit, only: [:show, :edit, :update, :destroy]
+  before_action :set_visit, only: %i[show edit update destroy]
 
   # GET /visits
   # GET /visits.json
@@ -9,8 +11,7 @@ class VisitsController < ApplicationController
 
   # GET /visits/1
   # GET /visits/1.json
-  def show
-  end
+  def show; end
 
   # GET /visits/new
   def new
@@ -18,8 +19,7 @@ class VisitsController < ApplicationController
   end
 
   # GET /visits/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /visits
   # POST /visits.json
@@ -62,13 +62,14 @@ class VisitsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_visit
-      @visit = Visit.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def visit_params
-      params.require(:visit).permit(:customer_id, :date_of_visit, :household_count, :notes)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_visit
+    @visit = Visit.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def visit_params
+    params.require(:visit).permit(:customer_id, :date_of_visit, :household_count, :notes)
+  end
 end

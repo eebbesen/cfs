@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 Customer.create(
   first: 'Shaine',
   middle: 'Doolittle',
   last: 'Payne',
   street: '3901 Chicago Ave',
   city: 'Minneapolis',
-  zip: 55402
+  zip: 55_402
 )
 
 Customer.create(
@@ -13,7 +15,7 @@ Customer.create(
   last: 'Cassini',
   street: '3901 Columbus Ave',
   city: 'Minneapolis',
-  zip: 55402
+  zip: 55_402
 )
 
 User.create(
