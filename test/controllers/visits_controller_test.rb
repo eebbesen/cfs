@@ -5,6 +5,8 @@ class VisitsControllerTest < ActionDispatch::IntegrationTest
 
   setup do
     @visit = visits(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do
