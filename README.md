@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/eebbesen/cfs.svg?style=svg&circle-token=bacf4c411d6f13c4804d4348ef5183a6a151fad1)](https://app.circleci.com/pipelines/github/eebbesen/cfs)
+
 # Food Shelf
 
 ## Development
