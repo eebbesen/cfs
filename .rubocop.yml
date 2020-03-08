@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'Gemfile'
+    - 'node_modules/**/*'
+    - 'Rakefile'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Exclude:
+    - 'test/**/*'
+    - 'app/controllers/**/*'
+    - 'app/**/*.jbuilder'
+    - 'app/jobs/**/*'
