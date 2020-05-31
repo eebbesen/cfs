@@ -8,6 +8,8 @@
 * Rails 6.x
 
 #### Windows
+Please see [our Windows 10 setup guide](windows-install.md)
+
 You may want to see https://gorails.com/setup/windows/10
 
 ### Setup
