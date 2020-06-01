@@ -1,6 +1,7 @@
 # Setup -- last updated on 05/31/2020
 * used the latest version of Modern IE Windows 64
-  * OS build 17763.379
+  * initial OS build 17763.379
+  * also worked after update to 17763.1217
 
 * used Ruby+Devkit 2.6.6-1 (x64)
   * accepted all defaults
@@ -48,6 +49,7 @@ git clone https://github.com/eebbesen/cfs.git
 ```
 
 ## Local project setup
+In a Windows terminal
 1. `cd cfs`
 1. `gem install bundler`
 1. `bundle install`
