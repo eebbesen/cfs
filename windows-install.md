@@ -40,7 +40,6 @@ then close window manually
 As an admin in a Windows PowerShell run (note, this may take tens of minutes!)
 ```bash
 npm config set msvs_version 2015 --global
-npm config set msvs_version 2015 --global
 ```
 
 ## Check out project from GitHub
