@@ -1,15 +1,15 @@
 # Setup -- last updated on 05/31/2020
 * used the latest version of Modern IE Windows 64
-** OS build 17763.379
+  * OS build 17763.379
 
 * used Ruby+Devkit 2.6.6-1 (x64)
-** accepted all defaults
+  * accepted all defaults
 
 * used Python 2.7.15 from `npm install windows-build-tools`
 
 ## Windows Ruby installer https://rubyinstaller.org/downloads/
 * download a Ruby+Devkit version for your Windows OS
-** accept all defaults
+  * accept all defaults
 
 ## Chocolatey https://chocolatey.org/install
 This program will help you manage other programs you'll want to have (like Git)
