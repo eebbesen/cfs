@@ -2,5 +2,6 @@
 
 <%= render 'form', customer: @customer %>
 
-<%= link_to 'Show', @customer %> |
-<%= link_to 'Back', customers_path %>
+
+<%= link_to 'Delete', @customer, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+<%= link_to 'Back', customers_path, class: 'btn btn-primary' %>

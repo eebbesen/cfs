@@ -1,7 +1,11 @@
 <h1>Visits</h1>
 
-<table>
-  <thead>
+<div class="new-button">
+  <%= link_to 'New Visit', new_visit_path, class: 'btn btn-primary' %>
+</div>
+
+<table class="table table-striped">
+  <thead class="thead-dark">
     <tr>
       <th>Customer</th>
       <th>Date of visit</th>
@@ -19,13 +23,9 @@
         <td><%= visit.household_count.to_i %></td>
         <td><%= visit.notes %></td>
         <td><%= link_to 'Show', visit %></td>
-        <td><%= link_to 'Edit', edit_visit_path(visit) %></td>
-        <td><%= link_to 'Destroy', visit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Visit', new_visit_path, class: 'btn btn-primary' %>

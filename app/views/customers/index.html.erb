@@ -1,7 +1,11 @@
 <h1>Customers</h1>
 
-<table>
-  <thead>
+<div class="new-button">
+  <%= link_to 'New Customer', new_customer_path, class: 'btn btn-primary' %>
+</div>
+
+<table class="table table-striped">
+  <thead class="thead-dark">
     <tr>
       <th>First</th>
       <th>Middle</th>
@@ -23,8 +27,6 @@
         <td><%= customer.city %></td>
         <td><%= customer.zip %></td>
         <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

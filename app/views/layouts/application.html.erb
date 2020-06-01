@@ -20,7 +20,12 @@
 
       <% if user_signed_in? %>
         <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'btn btn-danger') %>
-        <%= link_to 'New Customer', new_customer_path, class: 'btn btn-primary' %>
+        <% unless request.path.start_with? '/customer' %>
+          <%= link_to 'Customers', customers_path, class: 'btn btn-primary' %>
+        <% end %>
+        <% unless request.path.start_with? '/visit' %>
+          <%= link_to 'Visits', visits_path, class: 'btn btn-primary' %>
+        <% end %>
       <% end %>
 
       <%= yield %>
