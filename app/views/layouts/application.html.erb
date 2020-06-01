@@ -10,18 +10,20 @@
   </head>
 
   <body>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+    <div class="container">
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
 
-    <% if user_signed_in? %>
-      <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'logout-link') %> |
-      <%= link_to 'New Customer', new_customer_path %>
-    <% end %>
+      <% if user_signed_in? %>
+        <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'btn btn-danger') %>
+        <%= link_to 'New Customer', new_customer_path, class: 'btn btn-primary' %>
+      <% end %>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
   </body>
 </html>
