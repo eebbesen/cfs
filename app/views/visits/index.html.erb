@@ -16,7 +16,7 @@
       <tr>
         <td><%= visit.customer.full_name %></td>
         <td><%= visit.date_of_visit %></td>
-        <td><%= visit.household_count %></td>
+        <td><%= visit.household_count.to_i %></td>
         <td><%= visit.notes %></td>
         <td><%= link_to 'Show', visit %></td>
         <td><%= link_to 'Edit', edit_visit_path(visit) %></td>

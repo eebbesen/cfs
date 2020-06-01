@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CalfsRails</title>
+    <title>Calvary</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -18,7 +18,8 @@
     <% end %>
 
     <% if user_signed_in? %>
-      <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'logout-link') %>        
+      <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'logout-link') %> |
+      <%= link_to 'New Customer', new_customer_path %>
     <% end %>
 
     <%= yield %>
