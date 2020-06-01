@@ -14,7 +14,7 @@
   <tbody>
     <% @visits.each do |visit| %>
       <tr>
-        <td><%= visit.customer_id %></td>
+        <td><%= visit.customer.full_name %></td>
         <td><%= visit.date_of_visit %></td>
         <td><%= visit.household_count %></td>
         <td><%= visit.notes %></td>
