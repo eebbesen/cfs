@@ -23,7 +23,7 @@
         <% unless request.path.start_with? '/customer' %>
           <%= link_to 'Customers', customers_path, class: 'btn btn-primary' %>
         <% end %>
-        <% unless request.path.start_with? '/visit' %>
+        <% unless(request.path.start_with?('/visit') || request.controller_instance.class.name.start_with?('Visit')) %>
           <%= link_to 'Visits', visits_path, class: 'btn btn-primary' %>
         <% end %>
       <% end %>
