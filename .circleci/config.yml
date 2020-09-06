@@ -16,7 +16,7 @@ jobs:
           command: yarn
       - run:
           name: run_webpacker
-          command: bin/rails webpacker:install
+          command: bin/rails webpacker:install && bin/rails webpacker:compile
       - run:
           name: run_test
           command: bundle exec rake
