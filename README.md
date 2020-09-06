@@ -19,6 +19,9 @@ Assuming you have Ruby and Rails installed already
     bundle install
     bin/rake db:migrate
     bin/rake db:seed
+    yarn install --check-files
+    bin/rails webpacker:install
+    bin/rails webpacker:compile
 
 The first two commands set up the computer and the application. The third command creates the database. And the fourth command inserts test data for local development.
 
@@ -30,7 +33,7 @@ Browse to http://localhost:3000 to access the application.
 
 ### Automated Testing
 
-    bin/rails test
+    bin/rake
 
 ## User administration
 For security users are not allowed to create accounts for themselves. Instead an administrator must create users via the console.
