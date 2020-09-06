@@ -30,7 +30,7 @@ Browse to http://localhost:3000 to access the application.
 
 ### Automated Testing
 
-    bin/rails test
+    bin/rake
 
 ## User administration
 For security users are not allowed to create accounts for themselves. Instead an administrator must create users via the console.
