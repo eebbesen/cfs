@@ -2,6 +2,7 @@
   "name": "calfs_rails",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "7.9.0",
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
