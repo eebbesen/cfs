@@ -9,11 +9,14 @@ jobs:
           name: bundle_install
           command: gem install bundler; bundle install
       - run:
-         name: Yarn Install
-         command: yarn install --cache-folder ~/.cache/yarn
+          name: Yarn Install
+          command: yarn install --cache-folder ~/.cache/yarn
       - run:
           name: run_yarn
           command: yarn
+      - run:
+          name: run_webpacker
+          command: bin/rails webpacker:compile
       - run:
           name: run_test
           command: bundle exec rake
